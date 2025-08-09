@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+  
+    <style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body style="background-color: antiquewhite;">
+    <link rel="icon" href="gym.jpg" type="image/jpg">
+    <h1 style="background-image: url('backdrop1.jpg');">
+    <img src="gym.jpg" width="200px" height="100px" >
+    <h1 style="text-align:center;font-size:40px;color: rgb(97, 4, 136);"><b><i>FITNESS GYM</i></b></h1>
+    <p style="text-align: center;"><b><i>No:29 Nehru street,Ponamallee<br>Chennai-600 056</i></b></p>
+    <h1 style="text-align: center; color:rgb(97, 4, 136) ;font-size: 20;"><b>____________________________________________</b></h1>
+    <h1 style="text-align:left; color: rgb(97, 4, 136);; font-size: 30px;"><b><i>Registration form          ......</i></b></h1><br><br>
+    </h1>
+    <form>
+      <lable for="Name"><b>Name:</b></lable>
+      <input style="border: double;" type="text" id="name"name="name">
+      <label  for="email" style="text-align: right; display: inline-block; width: 150px;"><b>Email:</b></label>  
+      <input style="border: double;" type="email" id="email" name="email"><br><br><br>
+      <h3><b>Gender:</b></h3>
+      <input type="radio" id="male"name="gender" value="male";>
+      <lable for="male"><b>male</b></lable>
+      <input type="radio" id="female"name="gender" value="female">
+      <lable for="female"><b>Female</b></lable>
+      <label for="Your current weight(lbs)" style="text-align: right; display: inline-block; width: 250px;"><b>Your current<br> weight(lbs):</b></label>
+      <input  style="border: double;"type="number" id="your current weight(lbs)"><br><br><br>
+      <label for="Height"><b>Height:</b></label>
+      <input style="border: double;" type="number" id="Height">
+      <label for="Address" style="text-align: right; display: inline-block; width: 150px;"><b>Address:</b></label>
+      <input style="border: double;"type="text" id="Address"><br><br><br>
+      <label for="city"><b>city</b></label>
+      <select style="border: double;"type="text" id="city">
+      <option value="" ></option>
+      <option value="chennai">Chennai</option>
+      <option value="kancheepuram">kancheepuram</option>
+      <option value="thiruvallur">Thiruvallur</option>
+      <option value="chengalpattu">Chengalpattu</option>
+      </select>
+      <lable for="State" style="text-align: right; display: inline-block; width: 230px;"><b>State:</b></lable>
+      <input  style="border: double;"type="text" id="state"><br><br><br>
+      <lable for="country"><b>Country:</b></lable>
+      <input  style="border: double;"type="text" id="country">
+      <lable for="phone no" style="text-align: right; display: inline-block; width: 200px;" ><b>Phone no:</b></lable>
+      <input style="border: double;"type="number" id="phone no"><br><br><br>
+      <lable for="desired weight(lbs)"><b>Desired weight(lbs):</b></lable>
+      <input style="border: double;"type="number" id="desired weight(lbs)">
+      <lable for="Bmi" style="text-align: right; display: inline-block; width: 50px;"><b>BMI:</b></lable>
+      <input  style="border: double;"type="number" id="Bmi"><br><br>
+      <h3><b>Do you require a personal trainer ?</b></h3>
+      <input type="radio" id="yes"name="yes/no" value="yes";>
+      <lable for="yes"><b>Yes</b></lable>
+      <input type="radio" id="no"name="yes/no" value="no">
+      <lable for="no"><b>No</b></lable>
+      <h3 style="text-align: right; display: inline-block; width: 500px;"><b>Have you in Gym before ?</b></h3>
+      <input type="radio" id="yes"name="yes/no" value="yes";>
+      <lable for="yes"><b>Yes</b></lable>
+      <input type="radio" id="no"name="yes/no" value="no">
+      <lable for="no"><b>No</b></lable><br><br>
+      <input style="text-align: center; background-color: rgb(32, 237, 223);" value="Apply" >
+    </form>
+</body>
+</html>

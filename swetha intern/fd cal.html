@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fd calculator</title>
+    <link rel="stylesheet" href="fd cal.css">
+</head>
+<body>
+    <div id="wapper">
+        <h2><b>Fd calculator</b></h2>
+        <div class="inputdiv">
+            <input type="number" id="input" placeholder="Enter months">
+         </div>    
+
+            <button  type="button" onclick="fdcal()"> calculated amount</button>
+         <div id="outputdiv">
+            <p>Output will be displayed here</p>
+        </div>
+    </div>
+ <script>
+   function fdcal() {
+   
+    const months=Number(document.getElementById ("input").value);
+    let rate=0
+    if(months<3)
+       rate=5.8;
+    else if(months>=3 && months<=6)
+       rate=6.5;
+    else if(months>=6 && months<=9)
+       rate=6.8;
+    else
+       rate=7.0;
+    let result=document.querySelector("#outputdiv");
+    result.innerHTML=`<p>Rate of intrest for ${months} months is ${rate}%</p>`;
+    }
+</script> 
+</body>
+</html>

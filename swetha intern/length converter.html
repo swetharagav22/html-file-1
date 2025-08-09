@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length converter</title>
+    <link rel="stylesheet" href="length converter.css">
+</head>
+<body>
+    <div id="wapper">
+        <h2><b>Length converter</b></h2>
+        <div class="inputdiv">
+            <input type="number" id="cminput" placeholder="Length in cm">
+         </div>    
+            <button type="button" onclick="Converter()"> convert to inches</button>
+         <div class="outputdiv">
+            <p>Output will be displayed here</p>
+        </div>
+    </div>
+ <script>
+    function Converter() {
+    let cmval=Number(document.getElementById ("cminput").value)
+    let inchval=cmval/2.54
+    let outputdiv=document.getElementsByClassName("outputdiv")[0]
+    outputdiv.innerHTML=inchval.toFixed(2)+"inches"
+}
+</script>
+</body>
+
+</html>
